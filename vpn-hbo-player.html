@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VPN for HBO / Player — Abroad Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0f1c1a;
+      --muted: #4a5c58;
+      --paper: #f3f0e8;
+      --panel: rgba(255, 252, 246, 0.82);
+      --line: rgba(15, 28, 26, 0.12);
+      --accent: #c45c26;
+      --accent-deep: #9a3f12;
+      --teal: #1a6b5c;
+      --teal-soft: #d8ebe6;
+      --ok: #1a6b5c;
+      --warn: #8a5a12;
+      --shadow: 0 18px 50px rgba(15, 28, 26, 0.08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Outfit", sans-serif;
+      line-height: 1.55;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #e8d5c4 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #cfe3de 0%, transparent 50%),
+        linear-gradient(165deg, #efe8dc 0%, #e4ece9 45%, #dce6e3 100%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.35;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    .hero {
+      padding: 1.25rem 0 2.5rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      line-height: 1.05;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent-deep);
+    }
+
+    .lede {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 38rem;
+      margin: 0;
+    }
+
+    .verdict {
+      margin: 1.75rem 0 0;
+      padding: 1.15rem 1.25rem;
+      background: var(--teal-soft);
+      border-left: 4px solid var(--teal);
+      border-radius: 0 14px 14px 0;
+      color: var(--ink);
+      animation: rise 0.8s ease 0.1s both;
+    }
+
+    .verdict strong { color: var(--teal); }
+
+    section {
+      margin-top: 2.25rem;
+      animation: rise 0.75s ease both;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.12s; }
+    section:nth-of-type(2) { animation-delay: 0.2s; }
+    section:nth-of-type(3) { animation-delay: 0.28s; }
+    section:nth-of-type(4) { animation-delay: 0.36s; }
+
+    h2 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.7rem, 3.5vw, 2.15rem);
+      margin: 0 0 0.35rem;
+    }
+
+    .section-note {
+      color: var(--muted);
+      margin: 0 0 1.1rem;
+      font-size: 0.98rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--panel);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.95rem 1rem;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    th {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: rgba(15, 28, 26, 0.04);
+      font-weight: 600;
+    }
+
+    td:first-child {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-left: 0.4rem;
+      padding: 0.15rem 0.5rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #fff;
+      background: var(--accent);
+      border-radius: 6px;
+      vertical-align: middle;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.38rem 0.7rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(15, 28, 26, 0.06);
+      border: 1px solid transparent;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    a.btn:hover {
+      background: #fff;
+      border-color: var(--line);
+      transform: translateY(-1px);
+    }
+
+    a.btn.primary {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    a.btn.primary:hover {
+      background: #145548;
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .steps {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .steps li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.85rem;
+      align-items: start;
+      padding: 1rem 1.1rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .num {
+      width: 1.85rem;
+      height: 1.85rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .bottom-line {
+      margin-top: 2.5rem;
+      padding: 1.5rem 1.4rem;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #1a6b5c 0%, #0f3d36 100%);
+      color: #f5faf8;
+      box-shadow: var(--shadow);
+      animation: rise 0.8s ease 0.4s both;
+    }
+
+    .bottom-line h2 {
+      color: #fff;
+      margin-bottom: 0.65rem;
+    }
+
+    .bottom-line p {
+      margin: 0 0 0.85rem;
+      color: rgba(245, 250, 248, 0.9);
+    }
+
+    .bottom-line p:last-child { margin-bottom: 0; }
+
+    .bottom-line a {
+      color: #f0c9a8;
+      font-weight: 600;
+    }
+
+    .fineprint {
+      margin-top: 1.75rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      max-width: 40rem;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .wrap { width: min(100%, calc(100% - 1.25rem)); padding-top: 1.5rem; }
+
+      table, thead, tbody, th, td, tr { display: block; }
+
+      thead { display: none; }
+
+      tr {
+        padding: 1rem;
+        border-bottom: 1px solid var(--line);
+      }
+
+      tr:last-child { border-bottom: none; }
+
+      td {
+        border: none;
+        padding: 0.25rem 0;
+        white-space: normal;
+      }
+
+      td:first-child {
+        font-size: 1.05rem;
+        margin-bottom: 0.35rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.15rem;
+        font-weight: 600;
+      }
+
+      td:first-child::before { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Travel streaming · standalone guide</div>
+      <h1>VPN for <em>HBO / Player</em> on your phone</h1>
+      <p class="lede">
+        Free apps rarely work for geo-blocked streaming. Paid VPNs with Poland
+        (and US) servers are what current reviews say actually unlock Player.pl and Max/HBO.
+      </p>
+      <p class="verdict">
+        <strong>Verdict:</strong> For Player.pl and Max/HBO, use a paid VPN with Poland servers.
+        Free ones are fine for a quick test — most get blocked or run out of data.
+      </p>
+    </header>
+
+    <section>
+      <h2>Paid — highest chance of working</h2>
+      <p class="section-note">Pick one. Most offer ~30-day money-back so you can test on your phone.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>VPN</th>
+            <th>Why</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NordVPN <span class="badge">Best bet</span></td>
+            <td data-label="Why">Most often cited for Max + Player.pl; many Poland servers</td>
+            <td data-label="Links">
+              <div class="links">
+                <a class="btn primary" href="https://nordvpn.com" target="_blank" rel="noopener">Website</a>
+                <a class="btn" href="https://apps.apple.com/app/nordvpn-vpn-fast-secure/id905953485" target="_blank" rel="noopener">iOS</a>
+                <a class="btn" href="https://play.google.com/store/apps/details?id=com.nordvpn.android" target="_blank" rel="noopener">Android</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Surfshark</td>
+            <td data-label="Why">Cheap, unlimited devices; reported OK for Player.pl</td>
+            <td data-label="Links">
+              <div class="links">
+                <a class="btn primary" href="https://surfshark.com" target="_blank" rel="noopener">Website</a>
+                <a class="btn" href="https://apps.apple.com/app/surfshark-vpn-secure-fast/id1390800045" target="_blank" rel="noopener">iOS</a>
+                <a class="btn" href="https://play.google.com/store/apps/details?id=com.surfshark.vpnclient.android" target="_blank" rel="noopener">Android</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>ExpressVPN</td>
+            <td data-label="Why">Very reliable for Max; good mobile apps</td>
+            <td data-label="Links">
+              <div class="links">
+                <a class="btn primary" href="https://www.expressvpn.com" target="_blank" rel="noopener">Website</a>
+                <a class="btn" href="https://apps.apple.com/app/expressvpn-vpn-fast-secure/id1126386261" target="_blank" rel="noopener">iOS</a>
+                <a class="btn" href="https://play.google.com/store/apps/details?id=com.expressvpn.vpn" target="_blank" rel="noopener">Android</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>CyberGhost</td>
+            <td data-label="Why">Has servers labeled for HBO/Max</td>
+            <td data-label="Links">
+              <div class="links">
+                <a class="btn primary" href="https://www.cyberghostvpn.com" target="_blank" rel="noopener">Website</a>
+                <a class="btn" href="https://apps.apple.com/app/cyberghost-vpn-wifi-proxy/id582410229" target="_blank" rel="noopener">iOS</a>
+                <a class="btn" href="https://play.google.com/store/apps/details?id=de.mobileconcepts.cyberghost" target="_blank" rel="noopener">Android</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Free — try first, don’t count on it</h2>
+      <p class="section-note">Proton says HBO Max streaming is only guaranteed on paid plans. Free servers are often blocked.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>App</th>
+            <th>Realistic chance</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Proton VPN Free</td>
+            <td data-label="Realistic chance">Unlimited data, but streaming not guaranteed; free servers often blocked for Player/Max</td>
+            <td data-label="Links">
+              <div class="links">
+                <a class="btn primary" href="https://protonvpn.com" target="_blank" rel="noopener">Website</a>
+                <a class="btn" href="https://apps.apple.com/app/proton-vpn-fast-secure/id1437005085" target="_blank" rel="noopener">iOS</a>
+                <a class="btn" href="https://play.google.com/store/apps/details?id=ch.protonvpn.android" target="_blank" rel="noopener">Android</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Windscribe Free</td>
+            <td data-label="Realistic chance">~10–15 GB/mo; sometimes unblocks streaming better than Proton free; still hit-or-miss</td>
+            <td data-label="Links">
+              <div class="links">
+                <a class="btn primary" href="https://windscribe.com" target="_blank" rel="noopener">Website</a>
+                <a class="btn" href="https://apps.apple.com/app/windscribe-vpn/id1129435228" target="_blank" rel="noopener">iOS</a>
+                <a class="btn" href="https://play.google.com/store/apps/details?id=com.windscribe.vpn" target="_blank" rel="noopener">Android</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>PrivadoVPN Free</td>
+            <td data-label="Realistic chance">Limited free data; mixed streaming results</td>
+            <td data-label="Links">
+              <div class="links">
+                <a class="btn primary" href="https://privadovpn.com" target="_blank" rel="noopener">Website</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>How to connect</h2>
+      <p class="section-note">Server country must match the service you’re unlocking.</p>
+      <ol class="steps">
+        <li>
+          <span class="num">1</span>
+          <div><strong>Player.pl</strong> → connect to a VPN server in <strong>Poland</strong> (Warsaw if listed).</div>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <div><strong>Max / HBO</strong> → server in the <strong>country of your subscription</strong> (e.g. US or Poland).</div>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <div>Connect VPN → force-close Max/Player → reopen the app.</div>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <div>If blocked → switch to another server in the same country before changing apps.</div>
+        </li>
+      </ol>
+    </section>
+
+    <div class="bottom-line">
+      <h2>Bottom line</h2>
+      <p>
+        <strong>Free:</strong> start with
+        <a href="https://protonvpn.com" target="_blank" rel="noopener">Proton</a>
+        or
+        <a href="https://windscribe.com" target="_blank" rel="noopener">Windscribe</a>
+        — quick test, low expectations.
+      </p>
+      <p>
+        <strong>Paid that should work:</strong>
+        <a href="https://nordvpn.com" target="_blank" rel="noopener">NordVPN</a> first, then
+        <a href="https://surfshark.com" target="_blank" rel="noopener">Surfshark</a>
+        or
+        <a href="https://www.expressvpn.com" target="_blank" rel="noopener">ExpressVPN</a>.
+      </p>
+      <p>
+        Success changes week to week as services block IPs. If one server fails, try another in the same country.
+      </p>
+    </div>
+
+    <p class="fineprint">
+      Standalone reference page — not affiliated with any VPN or streaming service.
+      Using a VPN may conflict with a service’s terms of use. Only for accessing a subscription you already have.
+    </p>
+  </div>
+</body>
+</html>
