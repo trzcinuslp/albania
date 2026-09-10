@@ -23,7 +23,7 @@
       line-height: 1.45;
     }
     main {
-      max-width: 920px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 28px 18px 48px;
     }
@@ -61,7 +61,7 @@
       border-radius: 12px;
       overflow: hidden;
       margin: 10px 0 6px;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-family: "Segoe UI", Tahoma, sans-serif;
     }
     th, td {
@@ -83,6 +83,8 @@
       font-family: "Segoe UI", Tahoma, sans-serif;
     }
     a { color: var(--accent); }
+    .links { font-size: 0.88rem; line-height: 1.5; }
+    .links a { white-space: nowrap; }
     .verdict {
       background: var(--soft);
       border: 1px solid #b8d4df;
@@ -96,7 +98,7 @@
       padding-left: 1.2rem;
       font-family: "Segoe UI", Tahoma, sans-serif;
     }
-    ul.compact li { margin-bottom: 4px; }
+    ul.compact li { margin-bottom: 6px; }
   </style>
 </head>
 <body>
@@ -107,16 +109,28 @@
       <p>
         Niezależny przewodnik na weekend: wydarzenia datowane, życie nocne oraz stałe
         atrakcje w trzech miastach. Dojazd między nimi — SKM (kilkanaście minut).
+        Przy pozycjach: strona / bilety / FB / mapy.
       </p>
     </section>
 
     <h2>1. Werdykt</h2>
     <div class="verdict">
-      <strong>Headline weekendu:</strong> Brasswood Soundtracks (pt. 100cznia wolny wstęp → sob. Opera Leśna → nd. Olivia Star).<br />
-      <strong>Dzień za darmo:</strong> Gdańskie Targi Książki w ECS (11–13.09).<br />
-      <strong>Morze / molo:</strong> Sopot (ikona) albo Orłowo (najładniejszy spacer); z centrum Gdańska — Brzeźno tramwajem.<br />
-      <strong>Wieczór klubowy:</strong> Kwadratowa (pt./sob.) albo Sopot — Sfinks700 / Monciak.<br />
-      <strong>Zwiedzanie:</strong> Stare Miasto + ECS; Gdynia Skwer.
+      <strong>Headline weekendu:</strong>
+      <a href="https://brasswoodfestival.pl/" target="_blank" rel="noopener">Brasswood Soundtracks</a>
+      (pt. <a href="https://100cznia.pl/" target="_blank" rel="noopener">100cznia</a> wolny wstęp → sob.
+      <a href="https://operalesna.sopot.pl/" target="_blank" rel="noopener">Opera Leśna</a> → nd.
+      <a href="https://oliviastar.pl/" target="_blank" rel="noopener">Olivia Star</a>).<br />
+      <strong>Dzień za darmo:</strong>
+      <a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">Gdańskie Targi Książki</a>
+      w <a href="https://ecs.gda.pl/" target="_blank" rel="noopener">ECS</a> (11–13.09).<br />
+      <strong>Morze / molo:</strong>
+      <a href="https://mosirsopot.pl/obiekt/molo-w-sopocie/" target="_blank" rel="noopener">Sopot</a>
+      albo Orłowo; z centrum —
+      <a href="https://www.google.com/maps/search/Molo+Brze%C5%BAno+Gda%C5%84sk" target="_blank" rel="noopener">Brzeźno</a>.<br />
+      <strong>Wieczór klubowy:</strong>
+      <a href="https://kwadratowa.pl/" target="_blank" rel="noopener">Kwadratowa</a>
+      (<a href="https://www.facebook.com/AKPGKwadratowa" target="_blank" rel="noopener">FB</a>)
+      albo Sopot / <a href="https://www.b90.pl/" target="_blank" rel="noopener">B90</a>.
     </div>
 
     <h2>2. Imprezy i wydarzenia (dzień po dniu)</h2>
@@ -127,6 +141,7 @@
           <th>Co</th>
           <th>Gdzie / kiedy</th>
           <th>Wstęp</th>
+          <th>Linki</th>
         </tr>
       </thead>
       <tbody>
@@ -138,6 +153,10 @@
           </td>
           <td>ECS, pl. Solidarności 1 · 18:00</td>
           <td class="num">wolny</td>
+          <td class="links">
+            <a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">targi</a> ·
+            <a href="https://ecs.gda.pl/" target="_blank" rel="noopener">ECS</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Cz 10.09</strong></td>
@@ -147,6 +166,10 @@
           </td>
           <td>Akademia Muzyczna, Łąkowa 1–2 · od 17:30</td>
           <td class="num">wolny<br /><span class="note">zapisy</span></td>
+          <td class="links">
+            <a href="https://zblizeniafestiwal.org/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://zblizeniafestiwal.org/images/PROGRAM_VIII_edycja.pdf" target="_blank" rel="noopener">PDF</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Pt 11.09</strong></td>
@@ -156,6 +179,10 @@
           </td>
           <td>ECS · 10:00–18:00</td>
           <td class="num">wolny</td>
+          <td class="links">
+            <a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">targi</a> ·
+            <a href="https://www.facebook.com/GdanskieTargiKsiazki" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Pt 11.09</strong></td>
@@ -165,6 +192,11 @@
           </td>
           <td>100cznia, Gdańsk · od ~17:30</td>
           <td class="num">wolny</td>
+          <td class="links">
+            <a href="https://brasswoodfestival.pl/" target="_blank" rel="noopener">festiwal</a> ·
+            <a href="https://100cznia.pl/" target="_blank" rel="noopener">100cznia</a> ·
+            <a href="https://www.facebook.com/brasswoodfest" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Pt 11.09</strong></td>
@@ -173,6 +205,9 @@
           </td>
           <td>Centrum św. Jana, Świętojańska 50 · od 17:00</td>
           <td class="num">wolny<br /><span class="note">zapisy</span></td>
+          <td class="links">
+            <a href="https://zblizeniafestiwal.org/" target="_blank" rel="noopener">strona</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Pt 11.09</strong></td>
@@ -181,12 +216,33 @@
           </td>
           <td>Kwadratowa, Siedlicka 4 · 22:00–4:30</td>
           <td class="num">20 / 40 zł<br /><span class="note">lista FB do 23:00 free</span></td>
+          <td class="links">
+            <a href="https://kwadratowa.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/AKPGKwadratowa" target="_blank" rel="noopener">FB lista</a> ·
+            <a href="https://www.trojmiasto.pl/imprezy/Mocny-Piatek-w-Kwadratowej-imp599121.html" target="_blank" rel="noopener">opis</a> ·
+            <a href="https://krajownik.pl/gdansk/wydarzenia/mocny-piatek-w-kwadratowej-lista-fb-do-2300-wstep-free-11092026-379428" target="_blank" rel="noopener">11.09</a>
+          </td>
         </tr>
         <tr>
           <td><strong>So 12.09</strong></td>
           <td><strong>Gdańskie Targi Książki</strong></td>
           <td>ECS · 10:00–18:00</td>
           <td class="num">wolny</td>
+          <td class="links">
+            <a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">targi</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>So 12.09</strong></td>
+          <td>
+            <strong>Sobotni Melanż</strong> — Kwadratowa
+          </td>
+          <td>Siedlicka 4 · 22:00</td>
+          <td class="num">20 / 40 zł<br /><span class="note">lista FB free</span></td>
+          <td class="links">
+            <a href="https://www.facebook.com/AKPGKwadratowa" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://krajownik.pl/gdansk/wydarzenia/sobotni-melanz-w-kwadratowej-lista-fb-do-2300-wstep-free-12092026-379429" target="_blank" rel="noopener">12.09</a>
+          </td>
         </tr>
         <tr>
           <td><strong>So 12.09</strong></td>
@@ -196,6 +252,10 @@
           </td>
           <td>Żak, Grunwaldzka 195/197</td>
           <td class="num">~45 / 60 zł</td>
+          <td class="links">
+            <a href="https://www.klubzak.com.pl/" target="_blank" rel="noopener">Żak</a> ·
+            <a href="https://www.facebook.com/KlubZak" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
         <tr>
           <td><strong>So 12.09</strong></td>
@@ -204,13 +264,34 @@
             Hollywood Stories / Polish Master Shots
           </td>
           <td>Opera Leśna, Sopot · 19:00</td>
-          <td class="num">od ~229 zł<br /><span class="note">trojmiasto: 262–420</span></td>
+          <td class="num">od ~229 zł</td>
+          <td class="links">
+            <a href="https://brasswoodfestival.pl/bilety/" target="_blank" rel="noopener">bilety</a> ·
+            <a href="https://bilety.brasswoodfestival.pl/?lang=pl" target="_blank" rel="noopener">sklep</a> ·
+            <a href="https://operalesna.sopot.pl/" target="_blank" rel="noopener">Opera Leśna</a> ·
+            <a href="https://www.trojmiasto.pl/brassWood-fest/" target="_blank" rel="noopener">opis</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>So 12.09</strong></td>
+          <td>
+            <strong>ED:T</strong> — Lilly Palmer / Space 92 (elektronika)
+          </td>
+          <td>B90, Elektryków 4</td>
+          <td class="num">bilety</td>
+          <td class="links">
+            <a href="https://www.b90.pl/" target="_blank" rel="noopener">B90</a> ·
+            <a href="https://www.facebook.com/b90club" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Nd 13.09</strong></td>
           <td><strong>Gdańskie Targi Książki</strong> — finał</td>
           <td>ECS · 10:00–17:00</td>
           <td class="num">wolny</td>
+          <td class="links">
+            <a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">targi</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Nd 13.09</strong></td>
@@ -220,6 +301,10 @@
           </td>
           <td>Aniołki · od 10:00</td>
           <td class="num">wolny</td>
+          <td class="links">
+            <a href="https://media.gdansk.pl/komunikaty/876157/swieto-ulicy-chodowieckiego-na-aniolkach" target="_blank" rel="noopener">program</a> ·
+            <a href="https://www.google.com/maps/search/ul.+Chodowieckiego+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Nd 13.09</strong></td>
@@ -229,6 +314,10 @@
           </td>
           <td>Olivia Star, Grunwaldzka 472C · 19:00</td>
           <td class="num">od ~199 zł</td>
+          <td class="links">
+            <a href="https://brasswoodfestival.pl/bilety/" target="_blank" rel="noopener">bilety</a> ·
+            <a href="https://oliviastar.pl/" target="_blank" rel="noopener">Olivia Star</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Nd 13.09</strong></td>
@@ -237,12 +326,16 @@
           </td>
           <td>Chełm, ul. Cmentarna · 11:00 / 12:30</td>
           <td class="num">wolny<br /><span class="note">zapisy</span></td>
+          <td class="links">
+            <a href="https://zblizeniafestiwal.org/" target="_blank" rel="noopener">zapisy</a>
+          </td>
         </tr>
       </tbody>
     </table>
     <p class="note">
       Podczas targów wystawa stała ECS w promocji (~25 zł), „Stocznia” ~10 zł.
       Zbliżenia: liczba miejsc ograniczona — zapisy u organizatora.
+      Kalendarz: <a href="https://www.trojmiasto.pl/imprezy/" target="_blank" rel="noopener">trojmiasto.pl/imprezy</a>
     </p>
 
     <h2>3. Kluby i życie nocne</h2>
@@ -250,52 +343,89 @@
       <thead>
         <tr>
           <th>Lokal</th>
-          <th>Miasto / adres</th>
+          <th>Adres</th>
           <th>Klimat</th>
-          <th>Kiedy</th>
+          <th>Linki</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong>Kwadratowa</strong></td>
           <td>Gdańsk · Siedlicka 4</td>
-          <td>Duży klub PG, 2 parkiety, hity / imprezy tematyczne, 18+</td>
-          <td>Pt (Mocny Piątek), soboty — sprawdź FB</td>
+          <td>Duży klub PG, 2 parkiety, hity, 18+ · pt/sob</td>
+          <td class="links">
+            <a href="https://kwadratowa.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/AKPGKwadratowa" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://kwadratowa.pl/rezerwacja/" target="_blank" rel="noopener">loże</a> ·
+            <a href="https://www.google.com/maps/search/Kwadratowa+Siedlicka+4+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
-          <td><strong>Sfinks700</strong></td>
-          <td>Sopot · Boh. Monte Cassino</td>
-          <td>Klasyka Monciaka, elektronika / club nights</td>
-          <td>Weekend — repertuar live</td>
+          <td><strong>B90</strong></td>
+          <td>Gdańsk · Elektryków 4 (Stocznia)</td>
+          <td>Duże koncerty / elektronika, industrial</td>
+          <td class="links">
+            <a href="https://www.b90.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/b90club" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://www.google.com/maps/search/B90+Elektryk%C3%B3w+4+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Protokultura</strong></td>
-          <td>Gdańsk · św. Ducha</td>
-          <td>Centrum, imprezy tematyczne, elektronika, koncerty</td>
-          <td>Wg programu</td>
+          <td>Gdańsk · Niterów / Stocznia</td>
+          <td>Alternatywa, elektronika, koncerty</td>
+          <td class="links">
+            <a href="http://www.protokultura.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/protokultura" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://www.trojmiasto.pl/Protokultura-o2241.html" target="_blank" rel="noopener">trojmiasto</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Peron 5</strong></td>
-          <td>Gdańsk Wrzeszcz · Kilińskiego 4 (Metropolia)</td>
-          <td>Koncerty, DJ, food hall, widok na Wrzeszcz, 18+</td>
-          <td>Sprawdź Going / FB</td>
+          <td>Gdańsk Wrzeszcz · Kilińskiego 4</td>
+          <td>Koncerty, DJ, food hall, 18+</td>
+          <td class="links">
+            <a href="https://www.facebook.com/Peron5Gdansk" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://www.trojmiasto.pl/Peron-5-m35773.html" target="_blank" rel="noopener">trojmiasto</a> ·
+            <a href="https://goingapp.pl/" target="_blank" rel="noopener">Going</a> ·
+            <a href="https://www.google.com/maps/search/Peron+5+Metropolia+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Atelier</strong> <span class="note">(Sopot)</span></td>
+          <td>Sopot · Mamuszki 2 (przy plaży)</td>
+          <td>Scena / eventy przy molo · Sfinks700 zawieszony</td>
+          <td class="links">
+            <a href="https://teatratelier.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/TeatrAtelier" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://www.google.com/maps/search/Teatr+Atelier+Sopot" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Desdemona</strong></td>
           <td>Gdynia · Władysława IV</td>
           <td>Techno / klubowa scena</td>
-          <td>Weekendy</td>
+          <td class="links">
+            <a href="https://www.facebook.com/desdemonagdynia" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://www.trojmiasto.pl/Desdemona-o1931.html" target="_blank" rel="noopener">trojmiasto</a> ·
+            <a href="https://www.google.com/maps/search/Desdemona+Gdynia" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
-          <td><strong>B90 / Ucho</strong></td>
-          <td>Gdańsk / Gdynia</td>
-          <td>Koncerty rock / alt — mniej „parkiet”, więcej sceny</td>
-          <td>Wg kalendarza</td>
+          <td><strong>Ucho</strong></td>
+          <td>Gdynia</td>
+          <td>Koncerty rock / alt</td>
+          <td class="links">
+            <a href="https://www.klubucho.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/klubucho" target="_blank" rel="noopener">FB</a> ·
+            <a href="https://www.trojmiasto.pl/Ucho-o1936.html" target="_blank" rel="noopener">trojmiasto</a>
+          </td>
         </tr>
       </tbody>
     </table>
     <p class="note">
-      Kluby 18+ — dowód ze zdjęciem. Dresscode i listy FB zmieniają się per impreza.
+      Kluby 18+ — dowód ze zdjęciem. Listy FB: „Wezmę udział” na wydarzeniu (Kwadratowa zamyka listę ~21:00).
+      Sfinks700: <a href="https://www.trojmiasto.pl/Sfinks" target="_blank" rel="noopener">działalność zawieszona</a>.
     </p>
 
     <h2>4. Mola, plaże, nad morzem</h2>
@@ -304,73 +434,85 @@
         <tr>
           <th>Miejsce</th>
           <th>Co dostajesz</th>
-          <th>Dojazd / tip</th>
+          <th>Dojazd</th>
+          <th>Linki</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong>Sopot — molo + plaża</strong></td>
           <td>
-            Najsłynniejsze drewniane molo (~500 m), Skwer Kuracyjny, szeroka plaża,
-            knajpy przy promenadzie. Najbardziej „kurortowy” klimat Trójmiasta.
+            Najsłynniejsze drewniane molo (~500 m), Skwer Kuracyjny, plaża.
+            Molo płatne w sezonie (~10 zł do 30.09).
           </td>
-          <td>
-            SKM Sopot · molo płatne w sezonie (wejście na samą plażę darmowe) ·
-            w weekend bywa tłoczno
+          <td>SKM Sopot</td>
+          <td class="links">
+            <a href="https://mosirsopot.pl/obiekt/molo-w-sopocie/" target="_blank" rel="noopener">molo / cennik</a> ·
+            <a href="https://visit.sopot.pl/" target="_blank" rel="noopener">Visit Sopot</a> ·
+            <a href="https://www.google.com/maps/search/Molo+Sopot" target="_blank" rel="noopener">mapa</a>
           </td>
         </tr>
         <tr>
           <td><strong>Orłowo — molo + klif</strong></td>
           <td>
-            Najładniejszy nadmorski spacer: drewniane molo, klif Orłowski, plaża,
-            mniej imprezowo niż Sopot. Idealne na zdjęcia i spokojne popołudnie.
+            Najładniejszy nadmorski spacer: molo, klif, plaża — spokojniej niż Sopot.
           </td>
-          <td>SKM Gdynia Orłowo · 10–15 min piechotą do mola</td>
+          <td>SKM Gdynia Orłowo</td>
+          <td class="links">
+            <a href="https://www.gdynia.pl/co-zobaczyc/orlowo,4940/" target="_blank" rel="noopener">Gdynia.pl</a> ·
+            <a href="https://www.google.com/maps/search/Molo+Or%C5%82owo" target="_blank" rel="noopener">mapa molo</a> ·
+            <a href="https://www.google.com/maps/search/Klif+Or%C5%82owski" target="_blank" rel="noopener">klif</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Brzeźno — molo + plaża</strong></td>
           <td>
-            Molo ~157 m (wstęp wolny), szeroka plaża, beach bary, gastronomia.
-            Najbliższa „pełna” plaża względem centrum Gdańska.
+            Molo ~157 m (free), beach bary — najbliższa pełna plaża od centrum Gdańska.
           </td>
-          <td>Tramwaj 3/4 (~20–25 min ze Starego Miasta) · Mevo</td>
+          <td>Tramwaj 3/4 ~20–25 min</td>
+          <td class="links">
+            <a href="https://visitgdansk.com/pl/miejsca/molo-w-brzeznie,a,230" target="_blank" rel="noopener">Visit Gdańsk</a> ·
+            <a href="https://www.google.com/maps/search/Molo+Brze%C5%BAno" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Jelitkowo</strong></td>
-          <td>
-            Szeroka, uniwersalna plaża na granicy z Sopotem; park / zieleń,
-            spokojniejsza niż Monciak, beach bary.
+          <td>Szeroka plaża przy granicy z Sopotem; park, beach bary.</td>
+          <td>Tramwaj 2/4/6/8</td>
+          <td class="links">
+            <a href="https://www.google.com/maps/search/Pla%C5%BCa+Jelitkowo+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a> ·
+            <a href="https://www.google.com/maps/search/Park+Reagana+Gda%C5%84sk" target="_blank" rel="noopener">Park Reagana</a>
           </td>
-          <td>Tramwaj 2/4/6/8 · blisko Parku Reagana</td>
         </tr>
         <tr>
           <td><strong>Gdynia — Skwer + Molo Południowe</strong></td>
-          <td>
-            Promenada, marina, Dar Pomorza / ORP Błyskawica, plaża miejska.
-            Mniej „kąpielisko”, więcej spaceru nad portem.
+          <td>Promenada, marina, Dar Pomorza / Błyskawica, plaża miejska.</td>
+          <td>SKM Gdynia Główna</td>
+          <td class="links">
+            <a href="https://www.gdynia.pl/" target="_blank" rel="noopener">Gdynia.pl</a> ·
+            <a href="https://www.google.com/maps/search/Skwer+Ko%C5%9Bciuszki+Gdynia" target="_blank" rel="noopener">mapa</a>
           </td>
-          <td>SKM Gdynia Główna · kilka minut do Skweru</td>
         </tr>
         <tr>
           <td><strong>Stogi</strong></td>
-          <td>
-            Bardzo szeroka plaża (nawet ~100 m), mniej kurortowego zgiełku,
-            dobre na luz i przestrzeń.
+          <td>Bardzo szeroka plaża, mniej zgiełku.</td>
+          <td>Tramwaj → Stogi</td>
+          <td class="links">
+            <a href="https://www.google.com/maps/search/Pla%C5%BCa+Stogi+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a>
           </td>
-          <td>Tramwaj w stronę Stogów · dalej od centrum</td>
         </tr>
         <tr>
           <td><strong>Wyspa Sobieszewska</strong></td>
-          <td>
-            Spokój, natura, mniej ludzi — gdy chcecie uciec od parawanów i Monciaka.
+          <td>Spokój, natura — ucieczka od Monciaka.</td>
+          <td>Dłuższy dojazd / auto</td>
+          <td class="links">
+            <a href="https://www.google.com/maps/search/Wyspa+Sobieszewska+pla%C5%BCa" target="_blank" rel="noopener">mapa</a>
           </td>
-          <td>Dłuższy dojazd · raczej pół dnia / auto</td>
         </tr>
       </tbody>
     </table>
     <p class="note">
-      Wrzesień: woda chłodniejsza, ale spacery i molo działają cały rok.
-      Szybki combo: Brzeźno → Jelitkowo → Sopot wzdłuż plaży / bulwaru (albo sam Sopot → Orłowo SKM-ką).
+      Wrzesień: spacery i molo działają cały rok. Combo: Brzeźno → Jelitkowo → Sopot wzdłuż plaży albo Sopot → Orłowo SKM.
     </p>
 
     <h2>5. Miejsca i atrakcje (miasto)</h2>
@@ -380,6 +522,7 @@
           <th>Miasto</th>
           <th>Miejsce</th>
           <th>Dlaczego</th>
+          <th>Linki</th>
         </tr>
       </thead>
       <tbody>
@@ -387,53 +530,98 @@
           <td rowspan="6"><strong>Gdańsk</strong></td>
           <td>Stare Miasto — Długi Targ, Neptun, Mariacka</td>
           <td>Klasyka spaceru, darmowe</td>
+          <td class="links">
+            <a href="https://visitgdansk.com/" target="_blank" rel="noopener">Visit Gdańsk</a> ·
+            <a href="https://www.google.com/maps/search/D%C5%82ugi+Targ+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td>Europejskie Centrum Solidarności</td>
           <td>Historia + Targi Książki w tym weekendzie</td>
+          <td class="links">
+            <a href="https://ecs.gda.pl/" target="_blank" rel="noopener">ECS</a> ·
+            <a href="https://bilety.ecs.gda.pl/" target="_blank" rel="noopener">bilety</a> ·
+            <a href="https://www.facebook.com/ECS.Gdansk" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
         <tr>
           <td>Muzeum II Wojny Światowej</td>
           <td>Duża ekspozycja; darmowy wstęp we wtorki</td>
+          <td class="links">
+            <a href="https://muzeum1939.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://muzeum1939.pl/wizyta/wizyta-miiws/bilety-i-cennik" target="_blank" rel="noopener">bilety</a> ·
+            <a href="https://www.facebook.com/muzeum1939" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
         <tr>
           <td>Park Oliwski + katedra</td>
           <td>Zieleń, fontanny, spokojniejsze tempo</td>
+          <td class="links">
+            <a href="https://www.google.com/maps/search/Park+Oliwski+Gda%C5%84sk" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td>Westerplatte</td>
           <td>Teren historyczny, spacer nad zatoką</td>
+          <td class="links">
+            <a href="https://www.google.com/maps/search/Westerplatte" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td>Długie Pobrzeże / Wyspa Spichrzów</td>
           <td>Motława, Żuraw, modern vs. zabytki</td>
+          <td class="links">
+            <a href="https://www.nmm.pl/" target="_blank" rel="noopener">Muzeum Morskie</a> ·
+            <a href="https://www.google.com/maps/search/%C5%BBuraw+Gda%C5%84sk" target="_blank" rel="noopener">Żuraw</a>
+          </td>
         </tr>
         <tr>
           <td rowspan="2"><strong>Sopot</strong></td>
           <td>Monciak (Boh. Monte Cassino)</td>
-          <td>Deptak, knajpy, życie wieczorne (molo/plaża → sekcja 4)</td>
+          <td>Deptak, knajpy, życie wieczorne</td>
+          <td class="links">
+            <a href="https://visit.sopot.pl/" target="_blank" rel="noopener">Visit Sopot</a> ·
+            <a href="https://www.google.com/maps/search/Bohater%C3%B3w+Monte+Cassino+Sopot" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td>Krzywy Domek</td>
-          <td>Szybki punkt fotograficzny na deptaku</td>
+          <td>Punkt fotograficzny na deptaku</td>
+          <td class="links">
+            <a href="https://www.google.com/maps/search/Krzywy+Domek+Sopot" target="_blank" rel="noopener">mapa</a>
+          </td>
         </tr>
         <tr>
           <td rowspan="3"><strong>Gdynia</strong></td>
           <td>Dar Pomorza / ORP Błyskawica</td>
           <td>Statki-muzea przy Molo Południowym</td>
+          <td class="links">
+            <a href="https://www.nmm.pl/" target="_blank" rel="noopener">NMM / Dar Pomorza</a> ·
+            <a href="https://muzeummw.pl/" target="_blank" rel="noopener">Błyskawica</a>
+          </td>
         </tr>
         <tr>
           <td>Akwarium Gdyńskie</td>
           <td>Na gorszą pogodę / 1,5–2,5 h</td>
+          <td class="links">
+            <a href="https://akwarium.gdynia.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/AkwariumGdynskie" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
         <tr>
           <td>Muzeum Emigracji</td>
-          <td>Dworzec Morski, historie wyjazdów (środa darmowa)</td>
+          <td>Dworzec Morski (środa darmowa)</td>
+          <td class="links">
+            <a href="https://www.muzeumemigracji.pl/" target="_blank" rel="noopener">strona</a> ·
+            <a href="https://www.facebook.com/MuzeumEmigracji" target="_blank" rel="noopener">FB</a>
+          </td>
         </tr>
       </tbody>
     </table>
     <p class="note">
-      Między miastami: SKM (Gdańsk Główny ↔ Sopot ↔ Gdynia Główna / Orłowo). Mevo / tramwaj w Gdańsku.
+      SKM: <a href="https://skm.pkp.pl/" target="_blank" rel="noopener">skm.pkp.pl</a>
+      · Mevo: <a href="https://mevo.com.pl/" target="_blank" rel="noopener">mevo.com.pl</a>
+      · ZTM Gdańsk: <a href="https://ztm.gda.pl/" target="_blank" rel="noopener">ztm.gda.pl</a>
     </p>
 
     <h2>6. Propozycja planu 3 dni</h2>
@@ -450,38 +638,63 @@
         <tr>
           <td><strong>Pt 11</strong></td>
           <td>Stare Miasto (Długa, Mariacka, Motława)</td>
-          <td>Targi w ECS <em>albo</em> Brzeźno: molo + plaża</td>
-          <td>Brasswood 100cznia (free) → Kwadratowa / Sopot</td>
+          <td>
+            <a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">Targi ECS</a>
+            <em>albo</em>
+            <a href="https://www.google.com/maps/search/Molo+Brze%C5%BAno" target="_blank" rel="noopener">Brzeźno</a>
+          </td>
+          <td>
+            <a href="https://100cznia.pl/" target="_blank" rel="noopener">Brasswood 100cznia</a>
+            →
+            <a href="https://www.facebook.com/AKPGKwadratowa" target="_blank" rel="noopener">Kwadratowa FB</a>
+          </td>
         </tr>
         <tr>
           <td><strong>So 12</strong></td>
-          <td><strong>Sopot:</strong> molo + plaża + Monciak</td>
-          <td>Orłowo (klif + molo) albo Gdynia Skwer</td>
-          <td><strong>Brasswood Opera Leśna</strong> albo klub Sopot</td>
+          <td>
+            <a href="https://mosirsopot.pl/obiekt/molo-w-sopocie/" target="_blank" rel="noopener">Sopot molo</a>
+            + plaża + Monciak
+          </td>
+          <td>
+            <a href="https://www.google.com/maps/search/Molo+Or%C5%82owo" target="_blank" rel="noopener">Orłowo</a>
+            albo Gdynia Skwer
+          </td>
+          <td>
+            <a href="https://brasswoodfestival.pl/bilety/" target="_blank" rel="noopener">Brasswood Opera Leśna</a>
+            albo
+            <a href="https://www.b90.pl/" target="_blank" rel="noopener">B90</a>
+          </td>
         </tr>
         <tr>
           <td><strong>Nd 13</strong></td>
-          <td>Święto Chodowieckiego albo Targi do 17:00</td>
-          <td>Jelitkowo / luz na plaży albo Westerplatte</td>
-          <td>Brasswood Olivia Star albo spokojna kolacja Wrzeszcz</td>
+          <td>
+            <a href="https://media.gdansk.pl/komunikaty/876157/swieto-ulicy-chodowieckiego-na-aniolkach" target="_blank" rel="noopener">Chodowieckiego</a>
+            albo Targi do 17:00
+          </td>
+          <td>Jelitkowo / Westerplatte</td>
+          <td>
+            <a href="https://brasswoodfestival.pl/bilety/" target="_blank" rel="noopener">Brasswood Olivia Star</a>
+          </td>
         </tr>
       </tbody>
     </table>
 
-    <h2>7. Linki i źródła</h2>
+    <h2>7. Linki i źródła (zbiorczo)</h2>
     <ul class="compact">
-      <li><a href="https://brasswoodfestival.pl/" target="_blank" rel="noopener">Brasswood Soundtracks</a> · <a href="https://brasswoodfestival.pl/bilety/" target="_blank" rel="noopener">bilety</a></li>
-      <li><a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">Gdańskie Targi Książki</a></li>
-      <li><a href="https://zblizeniafestiwal.org/" target="_blank" rel="noopener">Festiwal Zbliżenia</a></li>
+      <li><a href="https://brasswoodfestival.pl/" target="_blank" rel="noopener">Brasswood</a> · <a href="https://brasswoodfestival.pl/bilety/" target="_blank" rel="noopener">bilety</a> · <a href="https://www.facebook.com/brasswoodfest" target="_blank" rel="noopener">FB</a></li>
+      <li><a href="https://www.gdanskietargiksiazki.pl/" target="_blank" rel="noopener">Targi Książki</a> · <a href="https://www.facebook.com/GdanskieTargiKsiazki" target="_blank" rel="noopener">FB</a> · <a href="https://ecs.gda.pl/" target="_blank" rel="noopener">ECS</a></li>
+      <li><a href="https://zblizeniafestiwal.org/" target="_blank" rel="noopener">Zbliżenia</a></li>
       <li><a href="https://www.trojmiasto.pl/imprezy/" target="_blank" rel="noopener">trojmiasto.pl / imprezy</a></li>
-      <li><a href="https://media.gdansk.pl/komunikaty/876157/swieto-ulicy-chodowieckiego-na-aniolkach" target="_blank" rel="noopener">Święto Ulicy Chodowieckiego</a></li>
-      <li><a href="https://kwadratowa.pl/" target="_blank" rel="noopener">Kwadratowa</a></li>
-      <li><a href="https://www.trojmiasto.pl/imprezy/Mocny-Piatek-w-Kwadratowej-imp599121.html" target="_blank" rel="noopener">Mocny Piątek — szczegóły</a></li>
+      <li><a href="https://kwadratowa.pl/" target="_blank" rel="noopener">Kwadratowa</a> · <a href="https://www.facebook.com/AKPGKwadratowa" target="_blank" rel="noopener">FB</a></li>
+      <li><a href="https://www.b90.pl/" target="_blank" rel="noopener">B90</a> · <a href="https://www.facebook.com/b90club" target="_blank" rel="noopener">FB</a></li>
+      <li><a href="https://mosirsopot.pl/obiekt/molo-w-sopocie/" target="_blank" rel="noopener">Molo Sopot</a> · <a href="https://visit.sopot.pl/" target="_blank" rel="noopener">Visit Sopot</a> · <a href="https://visitgdansk.com/" target="_blank" rel="noopener">Visit Gdańsk</a></li>
+      <li><a href="https://skm.pkp.pl/" target="_blank" rel="noopener">SKM</a> · <a href="https://jakdojade.pl/" target="_blank" rel="noopener">Jakdojade</a></li>
     </ul>
 
     <p class="note">
-      Wygenerowano 10.09.2026. Programy, godziny i ceny biletów bywają aktualizowane last minute —
-      przed wyjściem sprawdź stronę wydarzenia / FB klubu.
+      Wygenerowano 10.09.2026. Programy, godziny i ceny bywają last minute —
+      przed wyjściem sprawdź stronę / wydarzenie FB. Część fanpage’y FB może wymagać
+      wyszukania nazwy, jeśli link bezpośredni się zmieni.
     </p>
   </main>
 </body>
